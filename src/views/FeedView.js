@@ -1,7 +1,18 @@
 import React from 'react';
-import { Text, FlatList } from 'react-native';
+import { Text, FlatList, StyleSheet } from 'react-native';
 import PostView from './PostView';
 // import NewsView from './NewsView';
+
+const styles=StyleSheet.create({
+  FeedView: {
+    borderRadius: 4,
+    borderWidth: 0.5,
+    borderColor: '#d6d7da',
+    flex: 1,
+    flexDirection: 'column',
+    justifyContent: 'flex-start',
+  }
+});
 
 const FeedView = (props) => {
     if(props.error){
