@@ -1,5 +1,7 @@
 import React from 'react';
 import { Text, FlatList } from 'react-native';
+import PostView from './PostView';
+// import NewsView from './NewsView';
 
 const FeedView = (props) => {
     if(props.error){
@@ -8,8 +10,11 @@ const FeedView = (props) => {
       return (
         <FlatList
           renderItem={({item, index, separator}) => (
-            <Text key={index}>{item.message}</Text>
-          )}
+               <PostView post={item}/>
+            //   {item.type === 'news' &&
+            //     <NewsView post={item}
+            //   }
+            )}
           data={props.data.data}
         />
       )

@@ -26,7 +26,7 @@ const FetcherFactory = (url) => (Comp) =>
       .then(data => this.setState({ data, isLoading: false }))
       .catch(error => {
         console.log(error);
-        this.setState({ error, isLoading: false });
+        this.setState({ error: error, isLoading: false });
 
       });
     }
