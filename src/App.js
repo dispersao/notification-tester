@@ -10,7 +10,7 @@ export default class App extends React.Component {
   }
 
   render() {
-    const FetcherFeed = FetcherFactory('http://192.168.1.141:3001/feed.json')(FeedView)
+    const FetcherFeed = FetcherFactory('/api/feed')(FeedView)
     return (
       <View>
         <FetcherFeed/>

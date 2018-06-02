@@ -1,4 +1,8 @@
 import React from 'react';
+import FetchMock from 'react-native-fetch-mock';
+
+const realfetch= false;
+const fetchMock = new FetchMock(require('../mocks')).fetch;
 
 const FetcherFactory = (url) => (Comp) =>
   class WithFetching extends React.Component {
@@ -13,17 +17,19 @@ const FetcherFactory = (url) => (Comp) =>
     }
 
     componentDidMount() {
-        this.setState({ isLoading: true });
-      fetch(url)
+      this.setState({ isLoading: true });
+
+      const fetchMthod = realfetch? fetch : fetchMock;
+
+      fetchMthod(url)
       .then(response => {
-        console.log(response);
-        if (response.ok) {
+        if (response.status === 200) {
           return response.json();
         } else {
           throw new Error('Something went wrong ...');
         }
       })
-      .then(data => this.setState({ data, isLoading: false }))
+      .then(data => this.setState({ data: data, isLoading: false }))
       .catch(error => {
         console.log(error);
         this.setState({ error: error, isLoading: false });
@@ -32,7 +38,7 @@ const FetcherFactory = (url) => (Comp) =>
     }
 
     render() {
-      return <Comp { ...this.props } { ...this.state } />
+      return <Comp isLoading={this.state.isLoading} data={this.state.data} error={this.state.error}/>
     }
   }
 

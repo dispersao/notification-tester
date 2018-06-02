@@ -16,7 +16,7 @@ const styles=StyleSheet.create({
 
 const FeedView = (props) => {
     if(props.error){
-      return <Text>{error}</Text>
+      return <Text>{props.error.message}</Text>
     } else if(props.data && props.data.data && props.data.data.length){
       return (
         <FlatList
