@@ -5,28 +5,21 @@ import PostView from './PostView';
 
 const styles=StyleSheet.create({
   FeedView: {
-    borderRadius: 4,
-    borderWidth: 0.5,
-    borderColor: '#d6d7da',
-    flex: 1,
-    flexDirection: 'column',
-    justifyContent: 'flex-start',
+     paddingVertical: 8,
+     paddingHorizontal:8,
   }
 });
 
-const FeedView = (props) => {
-    if(props.error){
-      return <Text>{props.error.message}</Text>
-    } else if(props.data && props.data.data && props.data.data.length){
+const FeedView = ({error, isLoading, data}) => {
+    if(error){
+      return <Text>{error.message}</Text>
+    } else if(data && data.data && data.data.length){
       return (
-        <FlatList
+        <FlatList contentContainerStyle={styles.FeedView}
           renderItem={({item, index, separator}) => (
                <PostView post={item}/>
-            //   {item.type === 'news' &&
-            //     <NewsView post={item}
-            //   }
             )}
-          data={props.data.data}
+          data={data.data}
         />
       )
     } else {

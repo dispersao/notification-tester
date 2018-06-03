@@ -7,10 +7,11 @@ const styles = StyleSheet.create({
     flex: 1,
     flexDirection: 'row',
     color: '#323232',
-    justifyContent: 'center'
+    justifyContent: 'center',
+    marginBottom: 8
   },
   headerText: {
-    fontSize: 15,
+    fontSize: 18,
     padding:0,
     margin:0,
   },
@@ -19,13 +20,13 @@ const styles = StyleSheet.create({
   },
   headerDate: {
     color: '#434343',
-    fontSize: 12
+    fontSize: 15
   },
   textContainer: {
     flex: 1,
     flexDirection: 'column',
     justifyContent: 'flex-start',
-    paddingLeft: 5
+    paddingLeft: 8
   }
 });
 
@@ -33,7 +34,7 @@ const PostHeader =({post}) => {
   return (
     <View style={styles.headerContainer}>
       <Avatar
-        small
+        medium
         rounded
         source={{uri: post.author.image}}
         onPress={() => console.log("Works!")}
