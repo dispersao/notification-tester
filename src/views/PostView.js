@@ -2,6 +2,7 @@ import React from 'react';
 import {View, Text, StyleSheet} from 'react-native';
 import PostMessage from './PostMessage';
 import PostHeader from './PostHeader';
+import PostFooter from './PostFooter';
 
 
 const styles= StyleSheet.create({
@@ -21,6 +22,7 @@ const PostView = ({post}) => {
     <View style={styles.PostContainer}>
       <PostHeader post={post} />
       <PostMessage post={post} />
+      <PostFooter post={post} />
     </View>
   )
 }
