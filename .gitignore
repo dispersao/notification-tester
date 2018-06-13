@@ -20,9 +20,9 @@ yarn-error.log*
 
 *.iml
 .gradle
-/android/build
+/android/build/
 /android/local.properties
-/android/.idea
+/android/.idea/
 /android/.idea/workspace.xml
 /android/.idea/libraries
 /android/app/build
