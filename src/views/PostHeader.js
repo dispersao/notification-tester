@@ -6,7 +6,6 @@ const styles = StyleSheet.create({
   headerContainer: {
     flex: 1,
     flexDirection: 'row',
-    color: '#323232',
     justifyContent: 'center',
     marginBottom: 8
   },
