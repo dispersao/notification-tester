@@ -44,10 +44,34 @@ const PostHeader =({post}) => {
           <Text style={styles.headerName}>{post.author.name}</Text>
           <Text> postou:</Text>
         </Text>
-        <Text style={styles.headerDate}>{post.created_time}</Text>
+        <Text style={styles.headerDate}>{timeToString(post.created_time)}</Text>
       </View>
     </View>
   )
+}
+
+timeToString=(time)=> {
+  var now = new Date();
+  const thisMinute = 60000;
+  const thisHour = thisMinute * 60;
+  const today = thisHour * 24;
+
+  const timeSpread = now.getTime() - time;
+
+  if(timeSpread < thisMinute){
+    return 'now';
+  }
+  else if(timeSpread < thisHour){
+    return `${Math.round(timeSpread / thisMinute)} mins ago`;
+  }
+  else if(timeSpread < today){
+    return `${Math.round(timeSpread / thisHour)} hours ago`;
+  }
+  else {
+    const d = new Date(time);
+    return `${d.getDate()}/${d.getMonth()}/${d.getFullYear()} ${d.getHours()}:${d.getMinutes()}`;
+  }
+
 }
 
 export default PostHeader;

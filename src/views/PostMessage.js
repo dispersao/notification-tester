@@ -3,7 +3,7 @@ import {View, Text, StyleSheet} from 'react-native';
 
 const styles = StyleSheet.create({
   PostMessage:{
-    fontSize: 20,
+    fontSize: 24,
     paddingTop: 8,
     paddingBottom: 8
   }

@@ -2,7 +2,6 @@
   "data": [
     {
       "message": "Ahhhhhhhh morry de legging branco!!! Pedro Modesto Diogo Almeida Carlos Fred Rodrigues Marcio Pizzi Pedro R.Nunes Da Silva",
-      "created_time": "2018-05-21T12:48:36+0000",
       "id": "1067946859_10214506850119511",
       "type":"post",
       "likes":6,
@@ -15,9 +14,9 @@
     },
     {
       "message": "iphones de los cojones...",
-      "created_time": "2018-05-16T21:07:46+0000",
       "id": "1067946859_10214474118621244",
       "type": "news",
+      "likes":20,
       "author":{
         "id": 2345,
         "image":"https://s3.amazonaws.com/uifaces/faces/twitter/evagiselle/128.jpg",
@@ -26,9 +25,9 @@
     },
     {
       "message": "Berlin, i will be back soon :)",
-      "created_time": "2018-05-01T08:27:46+0000",
       "id": "1067946859_10214358091800646",
       "type":"post",
+      "likes":23,
       "author":{
         "id": 3456,
         "image":"https://s3.amazonaws.com/uifaces/faces/twitter/jsa/128.jpg",
@@ -37,9 +36,9 @@
     },
     {
       "message": "Todo es es muy muy guay tios!",
-      "created_time": "2018-04-26T18:02:34+0000",
       "id": "1067946859_10214327373152699",
       "type": "post",
+      "likes":10,
       "author":{
         "id": 4567,
         "image":"https://s3.amazonaws.com/uifaces/faces/twitter/talhaconcepts/128.jpg",
@@ -48,9 +47,9 @@
     },
     {
       "message": "#london #springishere",
-      "created_time": "2018-04-20T11:31:42+0000",
       "id": "1067946859_10214284679685389",
       "type":"post",
+      "likes":1,
       "author":{
         "id": 2345,
         "image":"https://s3.amazonaws.com/uifaces/faces/twitter/evagiselle/128.jpg",
