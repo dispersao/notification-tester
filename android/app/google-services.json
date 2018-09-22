@@ -1,27 +1,35 @@
 {
   "project_info": {
-    "project_number": "196367612663",
-    "firebase_url": "https://tester-dispersao.firebaseio.com",
-    "project_id": "tester-dispersao",
-    "storage_bucket": "tester-dispersao.appspot.com"
+    "project_number": "275241585037",
+    "firebase_url": "https://dispersao-ecf86.firebaseio.com",
+    "project_id": "dispersao-ecf86",
+    "storage_bucket": "dispersao-ecf86.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:196367612663:android:0c3fbf98c3e61540",
+        "mobilesdk_app_id": "1:275241585037:android:0c3fbf98c3e61540",
         "android_client_info": {
           "package_name": "com.pushy"
         }
       },
       "oauth_client": [
         {
-          "client_id": "196367612663-440bib4jbe98pcfldmb006olttc6r8ue.apps.googleusercontent.com",
+          "client_id": "275241585037-ke8953kp77348ggvfvu493o4cf1jsj70.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.pushy",
+            "certificate_hash": "91f83cf734d1a1f8cab7706f39d2ad9ba2583414"
+          }
+        },
+        {
+          "client_id": "275241585037-v5deir4tslihivmgntm0m1fvasm2c8qr.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyCR6QU05EfowE1wikIcC1QS1rvEN0ZSik0"
+          "current_key": "AIzaSyDvfZqcwseM0mqodu7WGhFE6WkQLzDuhGA"
         }
       ],
       "services": {
@@ -29,8 +37,13 @@
           "status": 1
         },
         "appinvite_service": {
-          "status": 1,
-          "other_platform_oauth_client": []
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "275241585037-v5deir4tslihivmgntm0m1fvasm2c8qr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
         },
         "ads_service": {
           "status": 2
